@@ -1,22 +1,23 @@
 import React from 'react';
 
-class Square extends React.Component {
-    // constructor(props) {
-    //     super(props);
-    //     this.state = {
-    //         value: null,
-    //     };
-    // }
-    render () {
+function Square(props) {
+// class Square extends React.Component {
+//     // constructor(props) {
+//     //     super(props);
+//     //     this.state = {
+//     //         value: null,
+//     //     };
+//     // }
+//     render () {
         return (
             <button className="square"
-            onClick={() => this.props.onClick()}
+            onClick={props.onClick}
             >
-                {this.props.value}
+                {props.value}
             </button>
         );
     }
-}
+
 
 //Code from hooks tutorial
 // const Square = ({ value, onClick }) => {
