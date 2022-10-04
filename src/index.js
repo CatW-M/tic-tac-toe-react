@@ -3,5 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Game from './components/Game';
 
-ReactDOM.render(<Game />, document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Game />);
+
+// ReactDOM.render(<Game />, document.getElementById('root'));
 
