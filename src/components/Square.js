@@ -9,8 +9,9 @@ function Square(props) {
 //     //     };
 //     // }
 //     render () {
+    const style = props.value ? `squares ${props.value}` : `squares`;
         return (
-            <button className="square"
+            <button className={style}
             onClick={props.onClick}
             >
                 {props.value}
